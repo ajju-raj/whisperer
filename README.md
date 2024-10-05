@@ -1,3 +1,81 @@
+# Whisperer
+
+Whisperer is a simple AI-powered web application that uses OpenAI's Whisper API to transcribe and summarize audio files. Developed with Next.js, it allows users to upload `.wav` or `.mp3` audio files, which are then processed, and a summary of the audio is displayed.
+
+## Features
+
+- Upload `.wav` and `.mp3` audio files
+- Use OpenAI's Whisper API for transcription and summarization
+- Display the summary of the uploaded audio
+- Built with Next.js and can be deployable on Vercel
+
+## Tech Stack
+
+- **Frontend**: Next.js, React.js
+- **Backend**: OpenAI API (Whisper)
+- **Deployment**: Vercel
+
+## Installation and Setup
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/ajju-raj/whisperer.git
+   cd whisperer
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+3. Set up environment variables:
+
+   Create a `.env.local` file in the root directory and add your OpenAI API key:
+
+   ```bash
+   OPENAI_API_KEY=your_openai_api_key
+   ```
+
+4. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+   The app will be running at `http://localhost:3000`.
+
+## Deployment
+
+Whisperer can be easily deployed on [Vercel](https://vercel.com/).
+
+1. Push your code to a GitHub repository.
+2. Connect your GitHub repository to Vercel.
+3. Deploy the project from the Vercel dashboard.
+
+## Usage
+
+1. Open the app in your browser.
+2. Upload a `.wav` or `.mp3` audio file using the file input.
+3. Click on the "Upload" button to send the file for transcription and summarization.
+4. The summary will be displayed on the screen once processing is complete.
+
+## Project Structure
+
+- `pages/index.tsx`: Main page with file upload functionality.
+- `api`: Backend route to handle file uploads and API calls to OpenAI's Whisper.
+
+## Contributing
+
+Feel free to open issues or submit pull requests with improvements or new features.
+
+## License
+
+This project is licensed under the MIT License.
+
+## Acknowledgements
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
